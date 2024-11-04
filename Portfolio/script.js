@@ -128,7 +128,7 @@ gsap.to("#skills", {
     ease: "power1.in",
 });
 
-gsap.to("#contact", {
+gsap.to("#contactMe", {
     text: "Contact",
     duration: 5,
     repeat: -1,
