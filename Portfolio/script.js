@@ -128,10 +128,3 @@ gsap.to("#skills", {
     ease: "power1.in",
 });
 
-gsap.to("#contactMe", {
-    text: "Contact",
-    duration: 5,
-    repeat: -1,
-    repeatDelay: 0.4,
-    ease: "power1.in",
-});
