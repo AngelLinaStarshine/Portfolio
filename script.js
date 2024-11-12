@@ -1,6 +1,3 @@
-
-
-// Animation after 1 second
 gsap.to(".imgmyself", {
     delay: 1,
     duration: 2,
@@ -15,7 +12,6 @@ gsap.to(".content", {
     ease: "power1.inOut"
 });
 
-// Quote Animation
 document.addEventListener("DOMContentLoaded", () => {
     const quote = document.querySelector(".quote");
     const container = document.querySelector(".quote-container");
@@ -36,7 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Typing effect
 const words = ["data analyst", "web developer", "security analyst", "instructional designer"];
 let wordIndex = 0;
 let typingElement = document.querySelector(".typing");
@@ -75,7 +70,6 @@ function deleteWord() {
 
 typeWord();
 
-// Intersection Observer for the about paragraphs
 const aboutParagraphs = document.querySelectorAll('.about');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -93,7 +87,6 @@ aboutParagraphs.forEach(paragraph => {
     observer.observe(paragraph);
 });
 
-// Scroll button functionality
 const scrollButton = document.querySelector('.scroll-btn');
 
 let timeout;
@@ -114,25 +107,39 @@ window.addEventListener('scroll', () => {
 
 gsap.to(".about-heading", {
     text: "About",
-    duration: 4,
+    duration: 3,
     repeat: -1,
-    repeatDelay: 0.4,
+    repeatDelay: 0.3,
     ease: "power1.in",
 });
 
 gsap.to(".skills-heading", {
     text: "Skills",
-    duration: 5,
+    duration: 3,
     repeat: -1,
-    repeatDelay: 0.4,
+    repeatDelay: 0.3,
     ease: "power1.in",
 });
 
 gsap.to(".contact-heading", {
     text: "Contact me",
-    duration: 5,
+    duration: 3,
     repeat: -1,
-    repeatDelay: 0.4,
+    repeatDelay: 0.3,
     ease: "power1.in",
 });
 
+
+let text = "Web Development";
+let i = 0;
+let speed = 100;
+
+function type() {
+    if (i < text.length) {
+        document.querySelector("#par").textContent += text.charAt(i); 
+        i++;
+        setTimeout(type, speed); 
+    } 
+}
+
+type();
