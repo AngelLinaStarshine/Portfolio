@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-const words = ["data analyst", "web developer", "security analyst", "instructional designer"];
+const words = ["data analyst", "web developer", "security analyst"];
 let wordIndex = 0;
 let typingElement = document.querySelector(".typing");
 
@@ -130,16 +130,4 @@ gsap.to(".contact-heading", {
 });
 
 
-let text = "Web Development";
-let i = 0;
-let speed = 100;
 
-function type() {
-    if (i < text.length) {
-        document.querySelector("#par").textContent += text.charAt(i); 
-        i++;
-        setTimeout(type, speed); 
-    } 
-}
-
-type();

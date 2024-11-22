@@ -16,7 +16,6 @@ body {
     left: 0; 
     width: 100%; 
     z-index: 1000; 
-
 }
 
 .dropdown {
@@ -158,8 +157,8 @@ body {
 .skills {
     background-color: #2C2C2C;
     color: white;
-    height: 260px;
-    width: 2840px;
+    height: 270px;
+    width: 340px;
     border-radius: 60px;
     padding: 50px 25px;
     text-align: center;
