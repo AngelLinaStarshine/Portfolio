@@ -1,14 +1,70 @@
-gsap.to(".imgmyself", {
-    delay: 1,
-    duration: 2,
-    x: window.innerWidth - 500, 
+gsap.from(".imgmyself", {
+    duration: 3,
+    x: window.innerWidth - 400, 
+    opacity: 0,  
     ease: "power2.inOut"
 });
 
-gsap.to(".content", {
+gsap.from(".content", {
     delay: 1,
     duration: 2,
-    x:-700, 
+    x: -600, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
+
+gsap.from(".header", {y: 20, ease: "elastic", duration: 3})
+gsap.from(".item", {opacity:0, duration: 3})
+gsap.from(".dropdown", {opacity:0, duration: 3})
+
+gsap.from(".one", {
+    duration: 2,
+    x:  window.innerWidth -600, 
+    opacity: 0,      
+    ease: "power1.inOut",
+    //repeat: -1,
+    //delay: 5
+});
+gsap.from(".two", {
+    delay: 1,
+    duration: 2,
+    x: -300, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
+gsap.from(".three", {
+    delay: 1,
+    duration: 2,
+    x:  window.innerWidth -600, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
+gsap.from(".four", {
+    delay: 1,
+    duration: 2,
+    x: -300, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
+gsap.from(".five", {
+    delay: 1,
+    duration: 2,
+    x:  window.innerWidth -600, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
+gsap.from(".six", {
+    delay: 1,
+    duration: 2,
+    x: -300, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
+gsap.from(".seven", {
+    delay: 1,
+    duration: 2,
+    x:  window.innerWidth -600, 
+    opacity: 0,      
     ease: "power1.inOut"
 });
 
@@ -129,5 +185,18 @@ gsap.to(".contact-heading", {
     ease: "power1.in",
 });
 
+gsap.from(".forma", {
+    duration: 2,
+    x: window.innerWidth - 400, 
+    opacity: 0,  
+    ease: "power2.inOut"
+});
+
+gsap.from(".image", {
+    duration: 2,
+    x: -600, 
+    opacity: 0,      
+    ease: "power1.inOut"
+});
 
 

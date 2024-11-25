@@ -134,10 +134,11 @@ body {
     font-style: bold; 
 }
 
-
 .logoImg img {
+  
     cursor: pointer;
     border-radius: 50%;
+   
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -177,7 +178,7 @@ body {
 }
 
 #par {
-    color:#2C2C2C;
+    color:#DAA520;
     margin-top: 200px;
     font-size: 100px;
 }
@@ -562,3 +563,4 @@ h2 {
   .count-particles{
     border-radius: 0 0 3px 3px;
   }
+
