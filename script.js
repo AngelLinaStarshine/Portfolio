@@ -1,6 +1,6 @@
 gsap.from(".imgmyself", {
     duration: 3,
-    x: window.innerWidth - 400, 
+    x: window.innerWidth - 800, 
     opacity: 0,  
     ease: "power2.inOut"
 });
@@ -8,7 +8,7 @@ gsap.from(".imgmyself", {
 gsap.from(".content", {
     delay: 1,
     duration: 2,
-    x: -600, 
+    x: -400, 
     opacity: 0,      
     ease: "power1.inOut"
 });
@@ -17,56 +17,95 @@ gsap.from(".header", {y: 20, ease: "elastic", duration: 3})
 gsap.from(".item", {opacity:0, duration: 3})
 gsap.from(".dropdown", {opacity:0, duration: 3})
 
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.from(".one", {
+    scrollTrigger: {
+        trigger: ".one",
+        start: "top 90%",   
+        end: "top 20%",     
+        scrub: true,        
+    },
+    x: 400,
     duration: 2,
-    x:  window.innerWidth -600, 
-    opacity: 0,      
-    ease: "power1.inOut",
-    //repeat: -1,
-    //delay: 5
+    opacity: 0,
+    stagger: 0.1,          
 });
+
 gsap.from(".two", {
-    delay: 1,
+    scrollTrigger: {
+        trigger: ".two",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: true,
+    },
+    x: 400,
     duration: 2,
-    x: -300, 
-    opacity: 0,      
-    ease: "power1.inOut"
+    opacity: 0,
 });
+
 gsap.from(".three", {
-    delay: 1,
+    scrollTrigger: {
+        trigger: ".three",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: true,
+    },
+    x: 400,
     duration: 2,
-    x:  window.innerWidth -600, 
-    opacity: 0,      
-    ease: "power1.inOut"
+    opacity: 0,
 });
+
 gsap.from(".four", {
-    delay: 1,
+    scrollTrigger: {
+        trigger: ".four",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: true,
+    },
+    x: 400,
     duration: 2,
-    x: -300, 
-    opacity: 0,      
-    ease: "power1.inOut"
+    opacity: 0,
 });
+
 gsap.from(".five", {
-    delay: 1,
+    scrollTrigger: {
+        trigger: ".five",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: true,
+    },
+    x: 400,
     duration: 2,
-    x:  window.innerWidth -600, 
-    opacity: 0,      
-    ease: "power1.inOut"
+    opacity: 0,
 });
+
 gsap.from(".six", {
-    delay: 1,
+    scrollTrigger: {
+        trigger: ".six",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: true,
+    },
+    x: 400,
     duration: 2,
-    x: -300, 
-    opacity: 0,      
-    ease: "power1.inOut"
+    opacity: 0,
 });
+
 gsap.from(".seven", {
-    delay: 1,
+    scrollTrigger: {
+        trigger: ".seven",
+        start: "top 90%",
+        end: "top 20%",
+        scrub: true,
+    },
+    x: 400,
     duration: 2,
-    x:  window.innerWidth -600, 
-    opacity: 0,      
-    ease: "power1.inOut"
+    opacity: 0,
 });
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
     const quote = document.querySelector(".quote");
@@ -200,3 +239,13 @@ gsap.from(".image", {
 });
 
 
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');  // Toggle the 'active' class to show the menu
+}
+
+// Dropdown menu toggle for mobile
+const dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+});
