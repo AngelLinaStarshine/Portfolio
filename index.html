@@ -15,24 +15,34 @@
    <body>
       <div class="header">
          <nav class="nav">
-            <div class="logoImg">
-            <a  href="#about"><img class="img" src="logo2.PNG" alt="logo" width="60px"></a>
-         </div>
-            <a class="item" href="#">Home</a>
-            <div class="dropdown">
-               <label class="dropdown-label">Portfolio</label>
-               <ul class="dropdown-menu">
-                  <li><a class="item" href="dataAnalyst.html" target="_blank">Data Analysis</a></li>
-                  <li><a class="item" href="web.html" target="_blank">Web Development</a></li>
-                  <li><a class="item" href="cyber.html" target="_blank">Cybersecurity</a></li>
-                  <!--<li><a class="item" href="id.html" target="_blank">Instructional Design</a></li>-->
-               </ul>
-            </div>
-            <a class="item" href="#about">About</a>
-            <a class="item" href="#skills">Skills</a>
-            <a class="item" href="index.html#contact">Contact me</a>
+           <div class="logoImg">
+             <a href="#about">
+               <img class="img" src="logo2.PNG" alt="logo" width="60px" />
+             </a>
+           </div>
+       
+           <!-- Home Link -->
+           <a class="item" href="#">Home</a>
+       
+           <!-- Portfolio Dropdown -->
+           <div class="dropdown">
+             <label class="dropdown-label">Portfolio</label>
+             <ul class="dropdown-menu">
+               <li><a class="item" href="dataAnalyst.html" target="_blank">Data Analysis</a></li>
+               <li><a class="item" href="web.html" target="_blank">Web Development</a></li>
+               <li><a class="item" href="cyber.html" target="_blank">Cybersecurity</a></li>
+             </ul>
+           </div>
+       
+           <!-- Other Links -->
+           <a class="item" href="#about">About</a>
+           <a class="item" href="#skills">Skills</a>
+           <a class="item" href="index.html#contact">Contact me</a>
+       
+           <!-- Hamburger Icon (Mobile) -->
+           <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
          </nav>
-      </div>
+       </div>
       <br>
       <div class="intro-container">
          <img class="imgmyself" src="myself.jpg" alt="myself" width="400px">

@@ -244,8 +244,15 @@ function toggleMenu() {
     nav.classList.toggle('active');  // Toggle the 'active' class to show the menu
 }
 
-// Dropdown menu toggle for mobile
+// Make sure the dropdown variable is declared only once
 const dropdown = document.querySelector('.dropdown');
+
 dropdown.addEventListener('click', () => {
     dropdown.classList.toggle('active');
 });
+
+// Handle hamburger menu toggle for mobile
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+}
