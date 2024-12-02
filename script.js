@@ -1,6 +1,6 @@
 gsap.from(".imgmyself", {
     duration: 3,
-    x: window.innerWidth - 800, 
+    x: window.innerWidth - 500, 
     opacity: 0,  
     ease: "power2.inOut"
 });
@@ -8,7 +8,7 @@ gsap.from(".imgmyself", {
 gsap.from(".content", {
     delay: 1,
     duration: 2,
-    x: -400, 
+    x: -300, 
     opacity: 0,      
     ease: "power1.inOut"
 });
@@ -241,17 +241,14 @@ gsap.from(".image", {
 
 function toggleMenu() {
     const nav = document.querySelector('.nav');
-    nav.classList.toggle('active');  // Toggle the 'active' class to show the menu
+    nav.classList.toggle('active');  
 }
 
-// Make sure the dropdown variable is declared only once
 const dropdown = document.querySelector('.dropdown');
-
 dropdown.addEventListener('click', () => {
     dropdown.classList.toggle('active');
 });
 
-// Handle hamburger menu toggle for mobile
 function toggleMenu() {
     const nav = document.querySelector('.nav');
     nav.classList.toggle('active');

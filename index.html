@@ -9,66 +9,57 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
       <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Galindo&family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Galindo&family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
    </head>
    <body>
       <div class="header">
          <nav class="nav">
-           <div class="logoImg">
-             <a href="#about">
-               <img class="img" src="logo2.PNG" alt="logo" width="60px" />
-             </a>
-           </div>
-       
-           <!-- Home Link -->
-           <a class="item" href="#">Home</a>
-       
-           <!-- Portfolio Dropdown -->
-           <div class="dropdown">
-             <label class="dropdown-label">Portfolio</label>
-             <ul class="dropdown-menu">
-               <li><a class="item" href="dataAnalyst.html" target="_blank">Data Analysis</a></li>
-               <li><a class="item" href="web.html" target="_blank">Web Development</a></li>
-               <li><a class="item" href="cyber.html" target="_blank">Cybersecurity</a></li>
-             </ul>
-           </div>
-       
-           <!-- Other Links -->
-           <a class="item" href="#about">About</a>
-           <a class="item" href="#skills">Skills</a>
-           <a class="item" href="index.html#contact">Contact me</a>
-       
-           <!-- Hamburger Icon (Mobile) -->
-           <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div class="logoImg">
+               <a href="#about">
+               <img class="img" src="logo2.PNG" alt="logo" width="60"/>
+               </a>
+            </div>
+            <a class="item" href="#">Home</a>
+            <a class="item" href="#about">About</a>
+            <a class="item" href="#skills">Skills</a>
+            <a class="item" href="index.html#contact">Contact me</a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
          </nav>
-       </div>
+      </div>
       <br>
       <div class="intro-container">
-         <img class="imgmyself" src="myself.jpg" alt="myself" width="400px">
+         <img class="imgmyself" src="myself.jpg" alt="myself" width="400">
          <div class="content">
-            <div class="text-1">Welcome to my <span class="text-2"><b><em>Portfolio!</em></b></span></div>
-            <div class="text-3">
-               a dynamic fusion of 
+            <div class="text-1">
+               <div class="dropdown">
+                  Welcome to my 
+                  <label class="dropdown-label"><b><em>Portfolio!</em></b>
+                  </label>
+                  <ul class="dropdown-menu">
+                     <li><a class="item" href="dataAnalyst.html" target="_blank">Data Analysis</a></li>
+                     <li><a class="item" href="web.html" target="_blank">Web Development</a></li>
+                     <li><a class="item" href="cyber.html" target="_blank">Cybersecurity</a></li>
+                  </ul>
+               </div>
+               <div class="text-3">
+                  a dynamic fusion of expertise in 
+               </div>
+               <div class="typing"></div>
+               <br>
+               <div class="text-3">
+                  Explore the innovative and versatile
+               </div>
+               <div class="text-3">
+                  solutions driving my work 
+               </div>
+               <div class="text-3">
+                  across these transformative domains.
+               </div>
+               <a href="#contact" class="btn scroll-btn">
+               Contact me
+               </a>
             </div>
-            <div class="text-3">
-               expertise in  
-            </div>
-            <div class="typing"></div>
-            <div class="text-3">
-               Explore the innovative and versatile
-            </div>
-            <div class="text-3">
-               solutions driving my work 
-            </div>
-            <div class="text-3">
-               across these transformative domains.
-            </div>
-            <a href="#contact">
-            <button class="btn scroll-btn">
-            Contact me
-            </button> 
-            </a>
          </div>
       </div>
       <br>
@@ -82,21 +73,22 @@
       <div class="section-about">
          <div class="about">
             <p class="one">Discover my expertise in <b>Data Analysis</b>, <b>Machine Learning</b>, <b>Blockchain</b>, and <b>DevOps</b>—fueled
-               by a passion for delivering innovative, real-world solutions.</p>
-
-               <p class="two">Specializing in building and optimizing <b>machine learning models</b> with TensorFlow, PyTorch, Scikit, and Hugging Face, 
-                  I transform data into predictive insights and deploy intelligent systems that drive innovation. </p>
-              <p class="three"> My experience with <b>blockchain</b> technology focuses on designing secure, automated <b>smart contracts</b> that power decentralized solutions.</p>
-               
-              <p class="four"> With a strong command of Python and JavaScript, I develop <b>dynamic applications</b> 
-               and <b>data pipelines</b> for optimize workflows and drive results. </p>
-              <p class="five"> Using <b>Power BI</b>, I transform raw data into impactful visualizations to empower decision-making.</p>
-               
-               <p class="six"><b>DevOps</b> experience ensures seamless system integration and reliability, 
-               while maintaining compliance with <b>NIST</b> and <b>ISO</b> security standards.</p>
-               
-               <p class="seven">This portfolio reflects my commitment to crafting user-focused, <b>scalable solutions</b> 
-               addressing modern challenges and <b>drive innovation</b></p>
+               by a passion for delivering innovative, real-world solutions.
+            </p>
+            <p class="two">Specializing in building and optimizing <b>machine learning models</b> with TensorFlow, PyTorch, Scikit, and Hugging Face, 
+               I transform data into predictive insights and deploy intelligent systems that drive innovation. 
+            </p>
+            <p class="three"> My experience with <b>blockchain</b> technology focuses on designing secure, automated <b>smart contracts</b> that power decentralized solutions.</p>
+            <p class="four"> With a strong command of Python and JavaScript, I develop <b>dynamic applications</b> 
+               and <b>data pipelines</b> for optimize workflows and drive results. 
+            </p>
+            <p class="five"> Using <b>Power BI</b>, I transform raw data into impactful visualizations to empower decision-making.</p>
+            <p class="six"><b>DevOps</b> experience ensures seamless system integration and reliability, 
+               while maintaining compliance with <b>NIST</b> and <b>ISO</b> security standards.
+            </p>
+            <p class="seven">This portfolio reflects my commitment to crafting user-focused, <b>scalable solutions</b> 
+               addressing modern challenges and <b>drive innovation</b>
+            </p>
          </div>
       </div>
       <div class="circle-container">
@@ -114,37 +106,28 @@
       <div class="container">
          <div class="skills">
             <a href="dataAnalyst.html" style="text-decoration: none; color: inherit;" target="_blank">
-            
                <h3 class="data"><strong>Data Analysis</strong></h3>
                <h4>Power BI, TensorFlow, PyTorch, Scikit, Apache Spark, MySQL, MongoDB, Kubernetes, JIRA</h4>
-               
-           
             </a>
          </div>
          <div class="skills">
             <a href="web.html" style="text-decoration: none; color: inherit;" target="_blank">
-         
                <h3 class="web"><strong>Web Development</strong></h3>
                <h4>JavaScript, Node.js, React, Redux, Python, Flutter, HTML, CSS, GSAP, Bootstrap, Express.js, Django</h4>
-               
-          
             </a>
          </div>
          <div class="skills">
             <a href="cyber.html" style="text-decoration: none; color: inherit;" target="_blank">
                <h3 class="cyber"><strong>Cybersecurity</strong></h3>
                <h4>Splunk, Nmap, Wireshark, Metasploit, Microsoft Sentinel, Blockchain, Snort, Kali Linux, Burp Suite, OpenVAS</h4>
-               
-               
             </a>
          </div>
          <!--<div class="skills">
             <a href="id.html" style="text-decoration: none; color: inherit;" target="_blank">
                   <h3 class="id"><strong>Instructional Design</strong></h3>
                   <h4>Blackboard, Vyond, Articulate Storyline, Figma, Canva, Final Cut Pro, ADDIE, SAM</h4>
-             
             </a>
-         </div>-->
+            </div>-->
       </div>
       <div class="section-header" id="contactMe">
          <h1 class="heading contact-heading"><strong></strong></h1>
@@ -155,20 +138,16 @@
          </div>
          <form class="forma" action="https://formspree.io/f/mldeelbj" method="POST">
             <div class="fullNameArea">
-               <p class="cardHead">Full Name</p>
                <input type="text" placeholder="Your Name" class="box" name="name" required>
             </div>
             <div class="emailArea">
-               <p class="cardHead">Email Address</p>
                <input type="email" placeholder="Your Email" class="box" name="email" required>
             </div>
             <div class="phoneArea">
-               <p class="cardHead">Phone Number</p>
                <input type="tel" placeholder="Your Phone Number" class="box" name="phone" required>
             </div>
             <div class="messageArea">
-               <p class="cardHead">Message</p>
-               <textarea name="comments" id="comments" cols="30" rows="10" class="box address" placeholder="Your Comments" required></textarea>
+               <textarea name="comments" id="comments" cols="5" rows="2" class="box address" placeholder="Your Comments" required></textarea>
             </div>
             <button type="submit" class="btn">Send</button>
          </form>
@@ -180,13 +159,13 @@
             </p>
             <div class="social-links">
                <a href="https://www.linkedin.com/in/lina-di" target="_blank" class="linkedin-link">
-                  <i class="fab fa-linkedin"></i>
-                  <a href="https://www.instagram.com/angelinastarshine/" target="_blank" class="instagram-link">
-                     <i class="fab fa-instagram"></i>
-                   </a>                   
-                   <a href="https://github.com/AngelLinaStarshine" target="_blank" class="github-link">
-                     <i class="fab fa-github"></i>
-                  </a>                  
+               <i class="fab fa-linkedin"></i>
+               <a href="https://www.instagram.com/angelinastarshine/" target="_blank" class="instagram-link">
+               <i class="fab fa-instagram"></i>
+               </a>                   
+               <a href="https://github.com/AngelLinaStarshine" target="_blank" class="github-link">
+               <i class="fab fa-github"></i>
+               </a>                  
             </div>
          </div>
          <p class="credit">Created by ADen 2023 - All rights reserved.</p>

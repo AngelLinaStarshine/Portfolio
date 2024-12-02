@@ -132,3 +132,19 @@ particlesJS("particles-js", {
     },
     "retina_detect": true
   });
+
+  
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');  
+}
+
+const dropdown = document.querySelector('.dropdown');
+dropdown.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+});
+
+function toggleMenu() {
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+}
