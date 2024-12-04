@@ -391,6 +391,7 @@ form {
 }
 h1 {
     font-size: calc(2rem + 1vw); 
+    font-weight: 400;
 }
 
 ::-webkit-scrollbar {

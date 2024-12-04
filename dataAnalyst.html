@@ -17,7 +17,7 @@
       <div class="header">
          <nav class="nav">
             <div class="logoImg">
-               <a  href="index.html#about"><img class="img" src="logo2.PNG" alt="logo" width="60px"></a>
+               <a  href="index.html#about"><img class="img" src="./pics/logo2.PNG" alt="logo" width="60px"></a>
             </div>
             <a class="item" href="index.html">Home</a>
             <div class="dropdown">
@@ -53,10 +53,84 @@
 
          </p>
       </div>
-      <div class="section-header">
-         <h4 class="heading"><strong><em>Projects</em></strong></h4>
-      </div>
-      <div class="accordion" id="accordionExample">
+   
+      <div class="portfolio-items" style="opacity: 1; visibility: inherit;">
+         <div class="portfolio-content">
+            <h3>Bitcoins Price Prediction</h3>
+            <p>This project is a web application built with <b>Flask</b> that uses machine learning to predict 
+               Bitcoin prices. It pulls <b>real-time</b> price data from the CoinGecko API and uses 
+               <b>linear regression</b> to forecast prices for the next 30 days. The app lets 
+               calculating key metrics profit, <b>RMSE</b>, <b>R-squared</b>, and <b>MAPE</b> 
+               to evaluate how well the predictions perform. 
+               The web interface displays both actual and predicted prices, 
+               and users can download a report of the backtest results after verifying 
+               their identity with a <b>SHA-256 key</b>. To keep the predictions up to date, 
+               the app automatically <b>fetches</b> new data every hour.
+            </p>
+            <div class="portfolio-buttons">
+               <a class="project_link" href="" target="_blank">View</a>
+               <a class="project_link" href="https://github.com/AngelLinaStarshine/Price_Prediction/tree/main" target="_blank">Code review</a>
+            </div>
+         </div>
+         <div class="portfolio-image">
+            <img src="./pics/bitcoin.png" alt="bitcoin">
+         </div>
+         </div>
+
+
+         <div class="portfolio-items" style="opacity: 1; visibility: inherit;">
+            <div class="portfolio-content">
+               <h3>Career Path Prediction</h3>
+               <p>This innovative project is a cutting-edge career path prediction tool that harnesses the power of <b>data science</b> 
+                  and <b>machine learning</b> to provide personalized, 
+                  data-driven insights for job seekers, career changers, and professionals planning their next move. 
+                  By analyzing a <b>vast dataset</b> of job market trends, including job titles, salaries, 
+                  required skills, and industry growth projections, the project leverages advanced 
+                  machine learning <b>algorithms</b> to predict salary expectations 
+                  and job growth trajectories based on user inputs.
+               </p>
+               <div class="portfolio-buttons">
+                  <a class="project_link" href="" target="_blank">View</a>
+                  <a class="project_link" href="https://github.com/AngelLinaStarshine/Career-Path-Prediction" target="_blank">Code review</a>
+               </div>
+            </div>
+            <div class="portfolio-image">
+               <img src="./pics/career.png" alt="career">
+            </div>
+            </div>
+
+            <div class="portfolio-items" style="opacity: 1; visibility: inherit;">
+               <div class="portfolio-content">
+                  <h3>Sentiment Analysis</h3>
+                  <p>This project implements a text classification model using <b>TensorFlow</b> and <b>Keras</b>
+                     to classify Yelp review data as <b>positive</b> or <b>negative</b>. 
+                     It uses the Yelp Polarity Reviews dataset from TensorFlow Datasets and applies 
+                     <b>TextVectorization</b> to preprocess the text. The model consists of an embedding layer, 
+                     followed by global average pooling, and a dense layer for binary classification. 
+                     After training, the <b>embeddings</b> are saved for analysis, 
+                     and training progress is visualized with accuracy plots.
+                  </p>
+                  <div class="portfolio-buttons">
+                     <a class="project_link" href="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/AngelLinaStarshine/new_review/main/projector_config.json" target="_blank">View</a>
+                     <a class="project_link" href="https://github.com/AngelLinaStarshine/new_review" target="_blank">Code review</a>
+                  </div>
+               </div>
+               <div class="portfolio-image">
+                  <img src="./pics/yelp.png" alt="yelp">
+               </div>
+               </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- <div class="accordion" id="accordionExample">
       <div class="accordion-item">
          <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -68,82 +142,7 @@
                <p>Data generators will read images from the course folders, convert them into <b>float32 tensors</b>, and then feed them to the neural network.</p>
                <p>Libraries in use: <b>matplotlib</b>, <b>TensorFlow</b>, <b>Keras</b>, <b>optimizer</b>, and <b>NumPy</b>.</p>
             </div>
-            </div>
-      </div>
-      <div class="accordion-item">
-         <h2 class="accordion-header" id="headingTwo">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <p>Project #2 <strong>"Bitcoins Price Prediction" </strong></p>
-            </button>
-         </h2>
-         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               <p><a class="project_link" href="https://github.com/AngelLinaStarshine/Price_Prediction/tree/main"  target="_blank">"Bitcoin Price Prediction"</a></p>
-               <p>This project is a web application built with <b>Flask</b> that uses machine learning to predict 
-                  Bitcoin prices. It pulls <b>real-time</b> price data from the CoinGecko API and uses 
-                  <b>linear regression</b> to forecast prices for the next 30 days. The app lets 
-                  calculating key metrics profit, <b>RMSE</b>, <b>R-squared</b>, and <b>MAPE</b> 
-                  to evaluate how well the predictions perform. 
-                  The web interface displays both actual and predicted prices, 
-                  and users can download a report of the backtest results after verifying 
-                  their identity with a <b>SHA-256 key</b>. To keep the predictions up to date, 
-                  the app automatically <b>fetches</b> new data every hour.</p>
-            </div>
-            </div>
-      </div>
-      <div class="accordion-item">
-         <h2 class="accordion-header" id="headingThree">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <p>Project #3 <strong>Text Analysis and NLP</strong> in progress...</p>
-            </button>
-         </h2>
-         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               <p>This Project integrates file uploading with text preprocessing and analysis, setting up a foundation for future <em>NLP</em> tasks using <em>deep learning models</em>.</p>
-            </div>
-         </div>
-      </div>
-      <div class="accordion-item">
-         <h2 class="accordion-header" id="headingFour">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-            <p>Project #4 <strong>"Career Path Prediction"</strong></p>
-            </button>
-         </h2>
-         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-               <p><a class="project_link" href="https://github.com/AngelLinaStarshine/Career-Path-Prediction"  target="_blank">"Career Path Prediction"</a></p>
-               <p>This innovative project is a cutting-edge career path prediction tool that harnesses the power of <b>data science</b> 
-                  and <b>machine learning</b> to provide personalized, 
-                  data-driven insights for job seekers, career changers, and professionals planning their next move. 
-                  By analyzing a <b>vast dataset</b> of job market trends, including job titles, salaries, 
-                  required skills, and industry growth projections, the project leverages advanced 
-                  machine learning <b>algorithms</b> to predict salary expectations 
-                  and job growth trajectories based on user inputs.</p>
-            
-            </div>
-         </div>
-      </div>
-      <div class="accordion-item">
-      <h2 class="accordion-header" id="headingFive">
-         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-         <p>Project #5 <strong>"Sentiment Analysis with Deep Learning: Classifying Yelp Reviews Using TensorFlow and Word Embeddings"</strong></p>
-         </button>
-      </h2>
-      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-         <div class="accordion-body">
-            <p><a class="project_link" href="https://github.com/AngelLinaStarshine/new_review"  target="_blank">"Yelp Polarity Reviews"</a></p>
-            <p><a class="project_link" href="https://projector.tensorflow.org/?config=https://raw.githubusercontent.com/AngelLinaStarshine/new_review/main/projector_config.json" target="_blank">Embedding Project</a></p>
-            <p>This project implements a text classification model using <b>TensorFlow</b> and <b>Keras</b>
-                to classify Yelp review data as <b>positive</b> or <b>negative</b>. 
-                It uses the Yelp Polarity Reviews dataset from TensorFlow Datasets and applies 
-                <b>TextVectorization</b> to preprocess the text. The model consists of an embedding layer, 
-                followed by global average pooling, and a dense layer for binary classification. 
-                After training, the <b>embeddings</b> are saved for analysis, 
-                and training progress is visualized with accuracy plots.</p>
-         
-         </div>
-      
-      </div>
+            </div> -->
       <div class="footer" id="contact">
          <div class="footer-container">
             <p>
